@@ -1,0 +1,42 @@
+{
+  "name": "moxie-leean/LeeanPlugin",
+  "description": "Barebones modular WordPress plugin",
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "^1.0",
+    "mitogh/katana": "dev-master",
+    "moxie-leean/cpt": "dev-master"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "2.*",
+    "wp-coding-standards/wpcs": "dev-master"
+  },
+  "authors": [
+    {
+      "name": "Moxie",
+      "email": "devs@getmoxied.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LeeanP\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/",
+      "./vendor/bin/phpcs --config-set default_standard ./codesniffer.ruleset.xml",
+      "./vendor/bin/phpcs --config-set show_progress 0",
+      "./vendor/bin/phpcs --config-set colors 1"
+    ],
+    "post-update-cmd": [
+      "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/",
+      "./vendor/bin/phpcs --config-set default_standard ./codesniffer.ruleset.xml",
+      "./vendor/bin/phpcs --config-set show_progress 0",
+      "./vendor/bin/phpcs --config-set colors 1"
+    ],
+    "ci": [
+      "./vendor/bin/phpcs *.php src/**/*.php src/**/**.php src/**/**/**/*.php"
+    ]
+  }
+}
