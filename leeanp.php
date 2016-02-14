@@ -28,7 +28,7 @@ define( 'LEEANP_API_NAMESPACE', 'leeanp/v' . LEEANP_API_VERSION );
 require_once LEEANP_PLUGIN_DIR . 'class-leeanp.php';
 require_once LEEANP_PLUGIN_DIR . 'vendor/autoload.php';
 
-$class_name = 'Leeanp_Setup';
+$class_name = '\Leeanp\Leeanp_Setup';
 register_activation_hook( __FILE__, array( $class_name, 'maybe_deactivate' ) );
 register_deactivation_hook( __FILE__, array( $class_name, 'flush_rewrite_rules' ) );
 $class_name::init();

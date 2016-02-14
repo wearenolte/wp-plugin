@@ -13,7 +13,11 @@
  *
  * @since 0.1.0
  */
-class LeeanP_Setup {
+class Leeanp_Setup {
+
+	const INC_DIR = LEEANP_PLUGIN_DIR . 'src/Inc';
+
+	const MODULES_DIR = LEEANP_PLUGIN_DIR . 'src/Modules';
 
 	/**
 	 * Initialise the program after everything is ready.
@@ -21,7 +25,23 @@ class LeeanP_Setup {
 	 * @since 0.1.0
 	 */
 	public static function init() {
-		//TODO: autoload Bootstep::init() for each Module and Inc
+		// Run the init() function for any inc classes which have it.
+		foreach ( glob( self::INC_DIR . '/*.php' ) as $file )
+		{
+			$class = '\\' . __NAMESPACE__ . '\\Inc\\' . basename( $file, '.php' );
+			if ( method_exists( $class, 'init' ) ) {
+				call_user_func( [$class, 'init'] );
+			}
+		}
+
+		// Run the Bootstrap::init() function for any modules which have it.
+		foreach ( glob( self::MODULES_DIR . '/*', GLOB_ONLYDIR ) as $dir )
+		{
+			$bootstrap = '\\' . __NAMESPACE__ . '\\Modules\\' . basename( $dir ) . '\\' . 'Bootstrap';
+			if ( method_exists( $bootstrap, 'init' ) ) {
+				call_user_func( [$bootstrap, 'init'] );
+			}
+		}
 	}
 
 	/**
