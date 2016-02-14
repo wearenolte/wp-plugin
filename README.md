@@ -22,7 +22,7 @@ composer install && composer update
 [Download Composer](https://getcomposer.org/download/) first if you don't already have it installed globally.
 
 ### Update information
-As a bare minimum you should make the following changes in the file ``leeanp.php```:
+As a bare minimum you should make the following changes in the file ```leeanp.php```:
  
 - Change the Plugin Name and Description in the comments at the top.
 - Update ```LeeanPlugin``` on line 18 to your plugin's name.
