@@ -1,19 +1,11 @@
-<?php namespace Leeanp;
-/**
- * The main plugin file for setup and initialization
- *
- * @since 0.1.0
- *
- * @package LeeanP
- */
-
+<?php namespace Leean;
 
 /**
  * Main class loader for initializing and  setting up the plugin.
  *
  * @since 0.1.0
  */
-class Leeanp_Setup {
+class PluginSetup {
 
 	const INC_DIR = LEEANP_PLUGIN_DIR . 'src/Inc';
 
@@ -26,20 +18,18 @@ class Leeanp_Setup {
 	 */
 	public static function init() {
 		// Run the init() function for any inc classes which have it.
-		foreach ( glob( self::INC_DIR . '/*.php' ) as $file )
-		{
+		foreach ( glob( self::INC_DIR . '/*.php' ) as $file ) {
 			$class = '\\' . __NAMESPACE__ . '\\Inc\\' . basename( $file, '.php' );
 			if ( method_exists( $class, 'init' ) ) {
-				call_user_func( [$class, 'init'] );
+				call_user_func( [ $class, 'init' ] );
 			}
 		}
 
 		// Run the Bootstrap::init() function for any modules which have it.
-		foreach ( glob( self::MODULES_DIR . '/*', GLOB_ONLYDIR ) as $dir )
-		{
-			$bootstrap = '\\' . __NAMESPACE__ . '\\Modules\\' . basename( $dir ) . '\\' . 'Bootstrap';
+		foreach ( glob( self::MODULES_DIR . '/*', GLOB_ONLYDIR ) as $dir ) {
+			$bootstrap = '\\' . __NAMESPACE__ . '\\Modules\\' . basename( $dir ) . '\\Bootstrap';
 			if ( method_exists( $bootstrap, 'init' ) ) {
-				call_user_func( [$bootstrap, 'init'] );
+				call_user_func( [ $bootstrap, 'init' ] );
 			}
 		}
 	}

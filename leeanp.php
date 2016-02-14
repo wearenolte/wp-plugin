@@ -1,11 +1,4 @@
-<?php
-/**
- * Main plugin file
- *
- * @since 0.1.0
- * @package Leeanp
- */
-
+<?php namespace Leean;
 /**
  * Plugin Name: Moxie Leean
  * Description: Barebones modular WordPress plugin.
@@ -15,6 +8,7 @@
  * Text Domain: leeanp
  */
 
+// General constants.
 define( 'LEEANP_PLUGIN_NAME', 'LeeanPlugin' );
 define( 'LEEANP_PLUGIN_VERSION', '0.1.0' );
 define( 'LEEANP_MINIMUM_WP_VERSION', '4.3.1' );
@@ -22,13 +16,16 @@ define( 'LEEANP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'LEEANP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'LEEANP_TEXT_DOMAIN', 'leeanp' );
 
+// API constants.
 define( 'LEEANP_API_VERSION', '1' );
 define( 'LEEANP_API_NAMESPACE', 'leeanp/v' . LEEANP_API_VERSION );
 
-require_once LEEANP_PLUGIN_DIR . 'class-leeanp.php';
+// Load Composer autoloader.
 require_once LEEANP_PLUGIN_DIR . 'vendor/autoload.php';
 
-$class_name = '\Leeanp\Leeanp_Setup';
+// Run the plugin setup.
+require_once LEEANP_PLUGIN_DIR . 'PluginSetup.php';
+$class_name = __NAMESPACE__ . '\\PluginSetup';
 register_activation_hook( __FILE__, array( $class_name, 'maybe_deactivate' ) );
 register_deactivation_hook( __FILE__, array( $class_name, 'flush_rewrite_rules' ) );
 $class_name::init();
