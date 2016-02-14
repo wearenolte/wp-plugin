@@ -3,4 +3,4 @@ Modules specific to your project go in this folder. Each module should address a
 
 Use static functions of a classes so the can be loaded automatically by Composer.
  
-**TODO:** Add a sample module and/or description.
+See the main repo [README](https://github.com/moxie-leean/LeeanPlugin#modules) for more info.
