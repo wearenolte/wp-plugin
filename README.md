@@ -105,7 +105,7 @@ src/
       
 And let's take the ```Bootstrap.php``` file from this module as an example:
 
-´´´php
+```php
 <?php namespace Leean\Modules\Options;
 
 class Bootstrap {
@@ -121,7 +121,7 @@ class Bootstrap {
 
 And taking the ```Api/Home.php``` as an example:
  
-´´´php
+```php
 <?php namespace Leean\Modules\Options\Api;
 
 class Home {
