@@ -6,7 +6,8 @@
     "composer/installers": "^1.0",
     "mitogh/katana": "dev-master",
     "moxie-leean/cpt": "dev-master",
-    "moxie-leean/acf": "dev-master"
+    "moxie-leean/acf": "dev-master",
+    "moxie-leean/wp-endpoints-view": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",

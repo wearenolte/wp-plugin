@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5e7cfd8ac9ccfeda3223a59c81591e48",
-    "content-hash": "45f184bf079bfb9de7c742fb69a08f87",
+    "hash": "5f574dcb3e227d64135a3a14f19b1eea",
+    "content-hash": "511d0c41749f3cb21b84332d333024c1",
     "packages": [
         {
             "name": "composer/installers",
@@ -135,6 +135,51 @@
             "time": "2015-11-22 03:44:04"
         },
         {
+            "name": "moxie-leean/acf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-acf.git",
+                "reference": "c9519cc936c00e1cfeef12c7fe07b0d9328da7e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/c9519cc936c00e1cfeef12c7fe07b0d9328da7e6",
+                "reference": "c9519cc936c00e1cfeef12c7fe07b0d9328da7e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leean\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Helper functions for working with Advanced Custom Fields",
+            "homepage": "https://github.com/moxie-leean/acf",
+            "keywords": [
+                "acf",
+                "wordpress"
+            ],
+            "time": "2016-02-15 17:45:35"
+        },
+        {
             "name": "moxie-leean/cpt",
             "version": "dev-master",
             "source": {
@@ -179,6 +224,51 @@
                 "wordpress"
             ],
             "time": "2016-02-10 18:40:16"
+        },
+        {
+            "name": "moxie-leean/wp-endpoints-view",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-endpoints-view.git",
+                "reference": "fc27237418cd0da6318a2514a1c8e3e2f387986b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-view/zipball/fc27237418cd0da6318a2514a1c8e3e2f387986b",
+                "reference": "fc27237418cd0da6318a2514a1c8e3e2f387986b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leean\\Endpoints\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Generic but customisable view endpoint to expose our content via WP-API",
+            "homepage": "https://github.com/moxie-leean/wp-endpoints",
+            "keywords": [
+                "api",
+                "wordpress"
+            ],
+            "time": "2016-03-10 18:49:10"
         }
     ],
     "packages-dev": [
@@ -301,6 +391,8 @@
     "stability-flags": {
         "mitogh/katana": 20,
         "moxie-leean/cpt": 20,
+        "moxie-leean/acf": 20,
+        "moxie-leean/wp-endpoints-view": 20,
         "wp-coding-standards/wpcs": 20
     },
     "prefer-stable": false,
