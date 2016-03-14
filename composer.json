@@ -7,7 +7,7 @@
     "mitogh/katana": "dev-master",
     "moxie-leean/cpt": "dev-master",
     "moxie-leean/acf": "dev-master",
-    "moxie-leean/wp-endpoints-view": "dev-master"
+    "moxie-leean/wp-endpoints-post": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",
