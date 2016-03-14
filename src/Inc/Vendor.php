@@ -11,6 +11,6 @@ class Vendor
 	 * Init.
 	 */
 	public static function init() {
-		Endpoints\View::init();
+		Endpoints\Post::init();
 	}
 }
