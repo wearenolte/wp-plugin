@@ -12,7 +12,7 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",
-    "wp-coding-standards/wpcs": "dev-master"
+    "wp-coding-standards/wpcs": "0.9.0"
   },
   "authors": [
     {
@@ -26,20 +26,16 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
+    "set-up-ci": [
       "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/",
       "./vendor/bin/phpcs --config-set default_standard ./codesniffer.ruleset.xml",
       "./vendor/bin/phpcs --config-set show_progress 0",
       "./vendor/bin/phpcs --config-set colors 1"
     ],
-    "post-update-cmd": [
-      "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/",
-      "./vendor/bin/phpcs --config-set default_standard ./codesniffer.ruleset.xml",
-      "./vendor/bin/phpcs --config-set show_progress 0",
-      "./vendor/bin/phpcs --config-set colors 1"
-    ],
+    "post-install-cmd": [ "@set-up-ci" ],
+    "post-update-cmd": [ "@set-up-ci" ],
     "ci": [
-      "./vendor/bin/phpcs *.php src/**/*.php src/**/**.php src/**/**/**/*.php"
+      "phpcs *.php src/**/*.php src/**/**.php"
     ]
   }
 }
