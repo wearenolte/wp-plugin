@@ -1,4 +1,4 @@
-<?php namespace Skaled\Modules\Widgets;
+<?php namespace Leean\Modules\Widgets;
 
 use Leean\Widgets;
 
