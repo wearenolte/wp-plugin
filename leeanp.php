@@ -16,10 +16,6 @@ define( 'LEEANP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'LEEANP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'LEEANP_TEXT_DOMAIN', 'leeanp' );
 
-// API constants.
-define( 'LEEANP_API_VERSION', '1' );
-define( 'LEEANP_API_NAMESPACE', 'leeanp/v' . LEEANP_API_VERSION );
-
 // Load Composer autoloader.
 require_once LEEANP_PLUGIN_DIR . 'vendor/autoload.php';
 
