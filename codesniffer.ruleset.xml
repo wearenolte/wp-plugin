@@ -15,5 +15,8 @@
 		<exclude name="WordPress.VIP.SuperGlobalInputUsage" />
 		<exclude name="WordPress.VIP.RestrictedFunctions" />
 		<exclude name="WordPress.VIP.SlowDBQuery" />
+		<exclude name="WordPress.VIP.SessionVariableUsage" />
+		<exclude name="WordPress.VIP.SessionFunctionsUsage" />
+		<exclude name="WordPress.CSRF.NonceVerification" />
 	</rule>
 </ruleset>
