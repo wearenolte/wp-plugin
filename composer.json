@@ -40,7 +40,7 @@
     "post-install-cmd": [ "@set-up-ci" ],
     "post-update-cmd": [ "@set-up-ci" ],
     "ci": [
-      "phpcs *.php src/**/*.php src/**/**.php src/**/**/*.php"
+      "phpcs *.php src/*.php src/**/**/*.php"
     ]
   }
 }
