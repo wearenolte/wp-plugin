@@ -1,4 +1,4 @@
-<?php namespace Leean\Inc;
+<?php namespace Leean;
 
 use Lean\Endpoints;
 use Leean\Endpoints as LegacyEndpointsNs;	// These packages will be updated to Lean\Endpoints.

@@ -7,7 +7,7 @@
  */
 class PluginSetup {
 
-	const INC_DIR = LEEANP_PLUGIN_DIR . 'src/Inc';
+	const INC_DIR = LEEANP_PLUGIN_DIR . 'src';
 
 	const MODULES_DIR = LEEANP_PLUGIN_DIR . 'src/Modules';
 
@@ -19,7 +19,7 @@ class PluginSetup {
 	public static function init() {
 		// Run the init() function for any inc classes which have it.
 		foreach ( glob( self::INC_DIR . '/*.php' ) as $file ) {
-			$class = '\\' . __NAMESPACE__ . '\\Inc\\' . basename( $file, '.php' );
+			$class = '\\' . __NAMESPACE__  .  '\\' . basename( $file, '.php' );
 			if ( method_exists( $class, 'init' ) ) {
 				call_user_func( [ $class, 'init' ] );
 			}

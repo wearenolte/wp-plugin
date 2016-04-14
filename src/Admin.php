@@ -1,4 +1,4 @@
-<?php namespace Leean\Inc;
+<?php namespace Leean;
 
 /**
  * General admin interface
