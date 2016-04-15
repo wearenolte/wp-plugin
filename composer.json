@@ -5,10 +5,15 @@
   "require": {
     "composer/installers": "^1.0",
     "mitogh/katana": "dev-master",
-    "moxie-leean/cpt": "dev-master",
-    "moxie-leean/acf": "dev-master",
-    "moxie-leean/wp-endpoints-post": "dev-master",
-    "moxie-leean/wp-page-templates": "dev-master"
+    "moxie-leean/wp-acf": "*",
+    "moxie-leean/wp-endpoints-routes": "*",
+    "moxie-leean/wp-endpoints-post": "*",
+    "moxie-leean/wp-page-templates": "dev-master",
+    "moxie-lean/wp-elements": "*",
+    "moxie-leean/wp-endpoints-static": "*",
+    "moxie-leean/wp-widgets": "*",
+    "moxie-leean/cpt": "*",
+    "moxie-lean/wp-endpoints-collection": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",
@@ -35,7 +40,7 @@
     "post-install-cmd": [ "@set-up-ci" ],
     "post-update-cmd": [ "@set-up-ci" ],
     "ci": [
-      "phpcs *.php src/**/*.php src/**/**.php src/**/**/*.php"
+      "phpcs *.php src/*.php src/**/**/*.php"
     ]
   }
 }

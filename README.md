@@ -43,18 +43,18 @@ LeeanPlugin provides a neat way of organising your code into Inc's and Modules.
 #### Inc's
 Inc's (or "includes") provide helper functions which can be used by any Module. They can also run code on plugin initialisation to set-up WordPress hooks for example. You need to use following the following pattern to create an Inc:
 
-- Each Inc should be placed in a single file in the ```src/Inc``` folder.
+- Each Inc should be placed in a single file in the ```src``` folder.
 - The file should contain a single class with static methods.
 - All names should follow these conventions:
     - File names are capitalized to match the class, e.g. ```MyInc.php```.
     - Class names are capitalized, e.g. ```MyInc```.
-    - All classes go in the ```Leean\Inc``` namespace.
+    - All classes go in the ```Leean``` namespace.
 - You can include an optional ```init``` function which will be automatically executed when LeeanPlugin initiates.
 
 If you follow these conventions then your Inc's function will be loaded automatically by Composer's autoloader. Let's look at a simple example:
 
 ```php
-<?php namespace Leean\Inc;
+<?php namespace Leean;
 
 class Media {
     public static function init() {
@@ -72,7 +72,7 @@ class Media {
 ```
 
 In this example the ```init``` function will be run automatically by LeeanPlugin.
-To use the other function, you just need to do the following: ```Media::get_image_src( $id, 'large');``` (don't forget to *use* the ```Leean\Inc``` namespace).
+To use the other function, you just need to do the following: ```Media::get_image_src( $id, 'large');``` (don't forget to *use* the ```Leean``` namespace).
 
 
 #### Modules

@@ -1,4 +1,6 @@
-<?php namespace Skaled\Modules\Widgets;
+<?php namespace Leean\Modules\Widgets;
+
+use Leean\Widgets;
 
 /**
  * Class Bootstrap
@@ -10,8 +12,16 @@ class Bootstrap {
 	 * Init
 	 */
 	public static function init() {
+		// Widgets.
+		Widgets\Register::init( [
+			'leean' => [
+				/* List all required Leean widgets here (see https://github.com/moxie-leean/wp-widgets) */
+			],
+		] );
+
+		// Widget Areas.
 		register_sidebar( [
-			'id' => 'footer_widget_area',
+			'id' => 'footer',
 			'name' => 'Footer',
 			'description' => 'Footer Widget area.',
 		] );
