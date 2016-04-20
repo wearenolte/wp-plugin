@@ -1,4 +1,4 @@
-<?php namespace Leean\Modules\Home;
+<?php namespace Leanp\Modules\Home;
 
 use Leean\PageTemplates;
 

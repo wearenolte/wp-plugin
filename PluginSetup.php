@@ -1,4 +1,4 @@
-<?php namespace Leean;
+<?php namespace Leanp;
 
 /**
  * Main class loader for initializing and  setting up the plugin.
@@ -7,9 +7,9 @@
  */
 class PluginSetup {
 
-	const INC_DIR = LEEANP_PLUGIN_DIR . 'src';
+	const INC_DIR = LEANP_PLUGIN_DIR . 'src';
 
-	const MODULES_DIR = LEEANP_PLUGIN_DIR . 'src/Modules';
+	const MODULES_DIR = LEANP_PLUGIN_DIR . 'src/Modules';
 
 	/**
 	 * Initialise the program after everything is ready.
@@ -44,20 +44,20 @@ class PluginSetup {
 
 		global $wp_version;
 
-		load_plugin_textdomain( LEEANP_TEXT_DOMAIN );
+		load_plugin_textdomain( LEANP_TEXT_DOMAIN );
 
 		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
-		if ( version_compare( $wp_version, LEEANP_MINIMUM_WP_VERSION, '<' ) ) {
+		if ( version_compare( $wp_version, LEANP_MINIMUM_WP_VERSION, '<' ) ) {
 
-			deactivate_plugins( LEEANP_PLUGIN_NAME );
+			deactivate_plugins( LEANP_PLUGIN_NAME );
 
 			echo wp_kses(
 				sprintf(
 					esc_html__(
 						'Plugin %s requires WordPress %s or higher.',
-						LEEANP_TEXT_DOMAIN
-					), LEEANP_API_VERSION, LEEANP_MINIMUM_WP_VERSION
+						LEANP_TEXT_DOMAIN
+					), LEANP_API_VERSION, LEANP_MINIMUM_WP_VERSION
 				),
 				array()
 			);
