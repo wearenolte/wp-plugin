@@ -1,4 +1,4 @@
-<?php namespace Leean;
+<?php namespace Leanp;
 
 /**
  * Util class with methods used for uploads.

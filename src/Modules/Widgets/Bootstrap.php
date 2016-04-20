@@ -1,4 +1,4 @@
-<?php namespace Leean\Modules\Widgets;
+<?php namespace Leanp\Modules\Widgets;
 
 use Leean\Widgets;
 
