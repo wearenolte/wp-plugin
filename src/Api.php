@@ -17,6 +17,8 @@ class Api
 		Endpoints\StaticApi::init();
 
 		add_filter( 'ln_endpoints_data_routes', [ __CLASS__, 'add_extra_routes' ] );
+
+		add_filter( 'allowed_http_origin', [ __CLASS__, 'gform_allowed_http_origin' ] );
 	}
 
 	/**
@@ -45,5 +47,22 @@ class Api
 		];
 
 		return array_merge( $routes, $extra_routes );
+	}
+
+	/**
+	 * Set the http origin to "*" for certain gforms endpoints.
+	 *
+	 * @param bool $allow_all Whether to allow all domains.
+	 * @return bool
+	 */
+	public static function gform_allowed_http_origin( $allow_all ) {
+		$method = isset( $_SERVER['REQUEST_METHOD'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_METHOD'] ) ) : false;
+		$uri = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : false;
+
+		return
+			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/?\?/', $uri ) ) ||
+			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/?\?/', $uri ) ) ||
+			( 'POST' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/submissions\/?/', $uri ) )
+				? true : $allow_all;
 	}
 }
