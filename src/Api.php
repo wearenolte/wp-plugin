@@ -1,7 +1,6 @@
 <?php namespace Leanp;
 
 use Lean\Endpoints;
-use Leean\Endpoints as LegacyEndpointsNs;	// These packages will be updated to Lean\Endpoints.
 
 /**
  * Set-up api endpoints.
@@ -14,9 +13,8 @@ class Api
 	public static function init() {
 		Endpoints\Routes::init();
 		Endpoints\Collection::init();
-
-		LegacyEndpointsNs\Post::init();
-		LegacyEndpointsNs\StaticApi::init();
+		Endpoints\Post::init();
+		Endpoints\StaticApi::init();
 
 		add_filter( 'ln_endpoints_data_routes', [ __CLASS__, 'add_extra_routes' ] );
 	}

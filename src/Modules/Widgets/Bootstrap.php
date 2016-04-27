@@ -1,6 +1,6 @@
 <?php namespace Leanp\Modules\Widgets;
 
-use Leean\Widgets;
+use Lean\Widgets;
 
 /**
  * Class Bootstrap

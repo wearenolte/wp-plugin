@@ -5,14 +5,14 @@
   "require": {
     "composer/installers": "^1.0",
     "mitogh/katana": "dev-master",
-    "moxie-leean/wp-acf": "*",
-    "moxie-leean/wp-endpoints-routes": "*",
-    "moxie-leean/wp-endpoints-post": "*",
-    "moxie-leean/wp-page-templates": "dev-master",
+    "moxie-lean/wp-acf": "*",
+    "moxie-lean/wp-endpoints-routes": "*",
+    "moxie-lean/wp-endpoints-post": "*",
+    "moxie-lean/wp-page-templates": "dev-master",
     "moxie-lean/wp-elements": "*",
-    "moxie-leean/wp-endpoints-static": "*",
-    "moxie-leean/wp-widgets": "*",
-    "moxie-leean/cpt": "*",
+    "moxie-lean/wp-endpoints-static": "*",
+    "moxie-lean/wp-widgets": "*",
+    "moxie-lean/wp-cpt": "*",
     "moxie-lean/wp-endpoints-collection": "*"
   },
   "require-dev": {
@@ -27,7 +27,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Leean\\": "src/"
+      "Leanp\\": "src/"
     }
   },
   "scripts": {
