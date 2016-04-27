@@ -1,6 +1,6 @@
 <?php namespace Leanp\Modules\Home;
 
-use Leean\PageTemplates;
+use Lean\PageTemplates;
 
 /**
  * Class Bootstrap

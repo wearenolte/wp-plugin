@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f533bf0c1c6a44a18f05f39ca3071683",
-    "content-hash": "2e4196e024f77880585061a61bbc5c8e",
+    "hash": "209d3b0b546c6c9bc55cf2e0193608e0",
+    "content-hash": "955239dc295070046e1d2504ed82a73c",
     "packages": [
         {
             "name": "composer/installers",
@@ -201,6 +201,52 @@
             "time": "2016-04-24 03:21:52"
         },
         {
+            "name": "moxie-lean/wp-cpt",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-cpt.git",
+                "reference": "1c842040f59bffccdf8486c1d983520ca7313d7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-cpt/zipball/1c842040f59bffccdf8486c1d983520ca7313d7a",
+                "reference": "1c842040f59bffccdf8486c1d983520ca7313d7a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Crisoforo Gaspar Hernandez",
+                    "email": "github@crisoforo.com"
+                }
+            ],
+            "description": "Craate custom post types more easily",
+            "homepage": "https://github.com/moxie-leean/wp-cpt",
+            "keywords": [
+                "cpt",
+                "post types",
+                "wordpress"
+            ],
+            "time": "2016-04-25 01:37:07"
+        },
+        {
             "name": "moxie-lean/wp-elements",
             "version": "0.3.0",
             "source": {
@@ -287,16 +333,16 @@
         },
         {
             "name": "moxie-lean/wp-endpoints-collection",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-endpoints-collection.git",
-                "reference": "142ec45454140e903a68a703c4373f4ae2f5225d"
+                "reference": "3b4298dcf9db0b06c4050e2bd802872faad6d26b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-collection/zipball/142ec45454140e903a68a703c4373f4ae2f5225d",
-                "reference": "142ec45454140e903a68a703c4373f4ae2f5225d",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-collection/zipball/3b4298dcf9db0b06c4050e2bd802872faad6d26b",
+                "reference": "3b4298dcf9db0b06c4050e2bd802872faad6d26b",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +376,201 @@
                 "wordpress",
                 "wordpress API"
             ],
-            "time": "2016-04-26 23:28:21"
+            "time": "2016-04-27 20:28:34"
+        },
+        {
+            "name": "moxie-lean/wp-endpoints-post",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-endpoints-post.git",
+                "reference": "451a78e16e0a8287790c3e5630f83df808b4cb71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-post/zipball/451a78e16e0a8287790c3e5630f83df808b4cb71",
+                "reference": "451a78e16e0a8287790c3e5630f83df808b4cb71",
+                "shasum": ""
+            },
+            "require": {
+                "moxie-lean/wp-acf": "1.*.*",
+                "moxie-lean/wp-endpoint": "1.*.*",
+                "moxie-lean/wp-utils": "1.*.*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\Endpoints\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Generic but customisable post endpoint to expose post content via WP-API",
+            "homepage": "https://github.com/moxie-leean/wp-endpoints-post",
+            "keywords": [
+                "api",
+                "wordpress"
+            ],
+            "time": "2016-04-26 23:27:43"
+        },
+        {
+            "name": "moxie-lean/wp-endpoints-routes",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-endpoints-routes.git",
+                "reference": "3382beba6eae8a88e420c28da95d35b75ff2a881"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-routes/zipball/3382beba6eae8a88e420c28da95d35b75ff2a881",
+                "reference": "3382beba6eae8a88e420c28da95d35b75ff2a881",
+                "shasum": ""
+            },
+            "require": {
+                "moxie-lean/wp-endpoint": "1.*.*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\Endpoints\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                },
+                {
+                    "name": "Crisoforo Gaspar Hernandez",
+                    "email": "chernandez@getmoxied.net"
+                }
+            ],
+            "description": "Get the set of routes.",
+            "homepage": "https://github.com/moxie-leean/wp-endpoints-routes",
+            "keywords": [
+                "api",
+                "wordpress"
+            ],
+            "time": "2016-04-25 01:50:05"
+        },
+        {
+            "name": "moxie-lean/wp-endpoints-static",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-endpoints-static.git",
+                "reference": "c6a935b6900c7b66f1bb82797106fcfd2117483c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-static/zipball/c6a935b6900c7b66f1bb82797106fcfd2117483c",
+                "reference": "c6a935b6900c7b66f1bb82797106fcfd2117483c",
+                "shasum": ""
+            },
+            "require": {
+                "moxie-lean/wp-acf": "1.*.*",
+                "moxie-lean/wp-endpoint": "1.*.*",
+                "moxie-lean/wp-widgets": "1.*.*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\Endpoints\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                },
+                {
+                    "name": "Crisoforo Gaspar Hernandez",
+                    "email": "chernandez@getmoxied.net"
+                }
+            ],
+            "description": "Generic but customisable endpoint to expose our static data via WP-API.",
+            "homepage": "https://github.com/moxie-leean/wp-endpoints-static",
+            "keywords": [
+                "api",
+                "wordpress"
+            ],
+            "time": "2016-04-25 01:49:06"
+        },
+        {
+            "name": "moxie-lean/wp-page-templates",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-page-templates.git",
+                "reference": "a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-page-templates/zipball/a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
+                "reference": "a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "A way of registering page templates from a plugin",
+            "homepage": "https://github.com/moxie-leean/wp-page-templates",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2016-04-24 23:38:04"
         },
         {
             "name": "moxie-lean/wp-utils",
@@ -383,66 +623,21 @@
             "time": "2016-04-26 23:20:36"
         },
         {
-            "name": "moxie-leean/cpt",
-            "version": "0.2.0",
+            "name": "moxie-lean/wp-widgets",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/cpt.git",
-                "reference": "b1c055af4a7d29325ea1a8fbcefe0167ddf8d59b"
+                "url": "https://github.com/moxie-leean/wp-widgets.git",
+                "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/cpt/get/b1c055af4a7d29325ea1a8fbcefe0167ddf8d59b.zip",
-                "reference": "b1c055af4a7d29325ea1a8fbcefe0167ddf8d59b",
+                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
+                "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Leean\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Crisoforo Gaspar Hernandez",
-                    "email": "github@crisoforo.com"
-                }
-            ],
-            "description": "Craate custom post types more easily",
-            "homepage": "https://github.com/moxie-leean/cpt",
-            "keywords": [
-                "cpt",
-                "post types",
-                "wordpress"
-            ],
-            "time": "2016-03-31 01:06:07"
-        },
-        {
-            "name": "moxie-leean/wp-acf",
-            "version": "0.4.4",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-acf.git",
-                "reference": "e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-acf/get/e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492.zip",
-                "reference": "e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492",
-                "shasum": ""
-            },
-            "require": {
+                "moxie-lean/wp-acf": "1.*.*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -452,342 +647,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Leean\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                },
-                {
-                    "name": "Crisoforo Gaspar",
-                    "email": "devs@getmoxied.net"
-                }
-            ],
-            "description": "Helper functions for working with Advanced Custom Fields",
-            "homepage": "https://github.com/moxie-leean/wp-acf",
-            "keywords": [
-                "acf",
-                "wordpress"
-            ],
-            "time": "2016-04-05 02:51:32"
-        },
-        {
-            "name": "moxie-leean/wp-endpoint",
-            "version": "0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoint.git",
-                "reference": "2c2bcf680f671022d24160c97bca8115d71b9951"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoint/get/2c2bcf680f671022d24160c97bca8115d71b9951.zip",
-                "reference": "2c2bcf680f671022d24160c97bca8115d71b9951",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Leean\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Moxie Developers",
-                    "email": "developer@getmoxied.net"
-                }
-            ],
-            "description": "wp-endpoint",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-post/",
-            "time": "2016-04-19 16:24:34"
-        },
-        {
-            "name": "moxie-leean/wp-endpoints-post",
-            "version": "0.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoints-post.git",
-                "reference": "b01563b56a56f67caffe1e843985b5cbbe550a00"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoints-post/get/b01563b56a56f67caffe1e843985b5cbbe550a00.zip",
-                "reference": "b01563b56a56f67caffe1e843985b5cbbe550a00",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-leean/wp-acf": "0.*.*",
-                "moxie-leean/wp-endpoint": "0.*.*",
-                "moxie-leean/wp-utils": "0.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Leean\\Endpoints\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                }
-            ],
-            "description": "Generic but customisable post endpoint to expose post content via WP-API",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-post",
-            "keywords": [
-                "api",
-                "wordpress"
-            ],
-            "time": "2016-04-20 01:49:22"
-        },
-        {
-            "name": "moxie-leean/wp-endpoints-routes",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoints-routes.git",
-                "reference": "ff759a4003ee025337498c7fdee4ccb9b611e2f5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoints-routes/get/ff759a4003ee025337498c7fdee4ccb9b611e2f5.zip",
-                "reference": "ff759a4003ee025337498c7fdee4ccb9b611e2f5",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-leean/wp-endpoint": "0.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lean\\Endpoints\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                },
-                {
-                    "name": "Crisoforo Gaspar Hernandez",
-                    "email": "chernandez@getmoxied.net"
-                }
-            ],
-            "description": "Get the set of routes.",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-routes",
-            "keywords": [
-                "api",
-                "wordpress"
-            ],
-            "time": "2016-04-05 00:26:23"
-        },
-        {
-            "name": "moxie-leean/wp-endpoints-static",
-            "version": "0.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoints-static.git",
-                "reference": "14f435c5018d10ba61799211e9d004ecdf471a37"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-endpoints-static/get/14f435c5018d10ba61799211e9d004ecdf471a37.zip",
-                "reference": "14f435c5018d10ba61799211e9d004ecdf471a37",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-leean/wp-acf": "0.*.*",
-                "moxie-leean/wp-endpoint": "0.*.*",
-                "moxie-leean/wp-widgets": "0.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Leean\\Endpoints\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                },
-                {
-                    "name": "Crisoforo Gaspar Hernandez",
-                    "email": "chernandez@getmoxied.net"
-                }
-            ],
-            "description": "Generic but customisable endpoint to expose our static data via WP-API.",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-static",
-            "keywords": [
-                "api",
-                "wordpress"
-            ],
-            "time": "2016-04-18 18:42:08"
-        },
-        {
-            "name": "moxie-leean/wp-page-templates",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-page-templates.git",
-                "reference": "107a30cd95b9fa66199cdd6a82c83d33f417aaed"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-page-templates/get/107a30cd95b9fa66199cdd6a82c83d33f417aaed.zip",
-                "reference": "107a30cd95b9fa66199cdd6a82c83d33f417aaed",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Leean\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                }
-            ],
-            "description": "A way of registering page templates from a plugin",
-            "homepage": "https://github.com/moxie-leean/wp-page-templates",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2016-03-17 23:50:47"
-        },
-        {
-            "name": "moxie-leean/wp-utils",
-            "version": "0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-utils.git",
-                "reference": "8e292ff5b8082a324e946db3a5f49f2c69d03a4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-utils/get/8e292ff5b8082a324e946db3a5f49f2c69d03a4d.zip",
-                "reference": "8e292ff5b8082a324e946db3a5f49f2c69d03a4d",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-lean/wp-elements": "0.*.*",
-                "moxie-leean/wp-acf": "0.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lean\\Utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                },
-                {
-                    "name": "Crisoforo Gaspar",
-                    "email": "devs@getmoxied.net"
-                }
-            ],
-            "description": "A suite of useful functions for your WordPress theme",
-            "homepage": "https://github.com/moxie-leean/wp-utils",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2016-04-20 00:49:14"
-        },
-        {
-            "name": "moxie-leean/wp-widgets",
-            "version": "0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/moxie-leean/wp-widgets.git",
-                "reference": "251696cb4a51a69e533a764cab23ec22c854690a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/moxie-leean/wp-widgets/get/251696cb4a51a69e533a764cab23ec22c854690a.zip",
-                "reference": "251696cb4a51a69e533a764cab23ec22c854690a",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-leean/wp-acf": "0.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Leean\\Widgets\\": "src/"
+                    "Lean\\Widgets\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -805,7 +665,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-04-07 17:56:16"
+            "time": "2016-04-25 01:43:06"
         }
     ],
     "packages-dev": [
@@ -928,7 +788,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "mitogh/katana": 20,
-        "moxie-leean/wp-page-templates": 20
+        "moxie-lean/wp-page-templates": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
