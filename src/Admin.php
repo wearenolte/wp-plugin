@@ -14,6 +14,7 @@ class Admin
 		}
 
 		add_action( 'admin_menu', [ __CLASS__, 'hide_menu_items' ] );
+		add_action( 'admin_head', [ __CLASS__, 'hide_preview_button' ] );
 	}
 
 	/**
@@ -38,5 +39,16 @@ class Admin
 	 */
 	public static function is_administrator( \WP_User $user ) {
 		return in_array( 'administrator', $user->roles, true );
+	}
+
+	/**
+	 * Funtion that uses CSS to hide the preview button on the admin page.
+	 */
+	public static function hide_preview_button() {
+	?>
+	<style type="text/css">
+		#post-preview { display: none !important; }
+	</style>
+	<?php
 	}
 }
