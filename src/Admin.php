@@ -3,8 +3,7 @@
 /**
  * General admin interface
  */
-class Admin
-{
+class Admin {
 	/**
 	 * Init.
 	 */
@@ -15,6 +14,7 @@ class Admin
 
 		add_action( 'admin_menu', [ __CLASS__, 'hide_menu_items' ] );
 		add_action( 'admin_head', [ __CLASS__, 'hide_preview_button' ] );
+		add_filter( 'wpseo_metabox_prio', [ __CLASS__, 'yoast_priority' ] );
 	}
 
 	/**
@@ -50,5 +50,15 @@ class Admin
 		#post-preview { display: none !important; }
 	</style>
 	<?php
+	}
+
+	/**
+	 * Change the priority used for the YOAST SEO Meta Box so ACF Boxes and other
+	 * components or meta fields.
+	 *
+	 * @return string The new priority
+	 */
+	public static function yoast_priority() {
+		return 'low';
 	}
 }
