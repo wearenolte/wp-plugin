@@ -7,26 +7,26 @@
  */
 class PluginSetup {
 
-	const INC_DIR = LEANP_PLUGIN_DIR . 'src';
-
-	const MODULES_DIR = LEANP_PLUGIN_DIR . 'src/Modules';
-
 	/**
 	 * Initialise the program after everything is ready.
 	 *
 	 * @since 0.1.0
 	 */
 	public static function init() {
+		$inc_dir = LEANP_PLUGIN_DIR . 'src/Inc';
+
+		$modules_dir = LEANP_PLUGIN_DIR . 'src/Modules';
+
 		// Run the init() function for any inc classes which have it.
-		foreach ( glob( self::INC_DIR . '/*.php' ) as $file ) {
-			$class = '\\' . __NAMESPACE__  .  '\\' . basename( $file, '.php' );
+		foreach ( glob( $inc_dir . '/*.php' ) as $file ) {
+			$class = '\\' . __NAMESPACE__ . '\\Inc\\' . basename( $file, '.php' );
 			if ( method_exists( $class, 'init' ) ) {
 				call_user_func( [ $class, 'init' ] );
 			}
 		}
 
 		// Run the Bootstrap::init() function for any modules which have it.
-		foreach ( glob( self::MODULES_DIR . '/*', GLOB_ONLYDIR ) as $dir ) {
+		foreach ( glob( $modules_dir . '/*', GLOB_ONLYDIR ) as $dir ) {
 			$bootstrap = '\\' . __NAMESPACE__ . '\\Modules\\' . basename( $dir ) . '\\Bootstrap';
 			if ( method_exists( $bootstrap, 'init' ) ) {
 				call_user_func( [ $bootstrap, 'init' ] );
