@@ -1,4 +1,4 @@
-# Lean Plugin
+# LEAN Plugin
 Barebones modular WordPress plugin.
 
 ## Getting Started
