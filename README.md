@@ -1,4 +1,4 @@
-# LeeanPlugin
+# Lean Plugin
 Barebones modular WordPress plugin.
 
 ## Getting Started
