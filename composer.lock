@@ -156,12 +156,12 @@
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-acf.git",
+                "url": "https://github.com/moxie-lean/wp-acf.git",
                 "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/15232b3814aa7be8cf01b1d217f75ded1670d7bc",
+                "url": "https://api.github.com/repos/moxie-lean/wp-acf/zipball/15232b3814aa7be8cf01b1d217f75ded1670d7bc",
                 "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc",
                 "shasum": ""
             },
@@ -205,12 +205,12 @@
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-cpt.git",
+                "url": "https://github.com/moxie-lean/wp-cpt.git",
                 "reference": "1c842040f59bffccdf8486c1d983520ca7313d7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-cpt/zipball/1c842040f59bffccdf8486c1d983520ca7313d7a",
+                "url": "https://api.github.com/repos/moxie-lean/wp-cpt/zipball/1c842040f59bffccdf8486c1d983520ca7313d7a",
                 "reference": "1c842040f59bffccdf8486c1d983520ca7313d7a",
                 "shasum": ""
             },
@@ -248,16 +248,16 @@
         },
         {
             "name": "moxie-lean/wp-elements",
-            "version": "0.3.0",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-elements.git",
-                "reference": "d6fb069c1505f115e2d6bc3cf942f8969e5e515b"
+                "url": "https://github.com/moxie-lean/wp-elements.git",
+                "reference": "f7cf152328e25689235ee9451f14443433b26305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-elements/zipball/d6fb069c1505f115e2d6bc3cf942f8969e5e515b",
-                "reference": "d6fb069c1505f115e2d6bc3cf942f8969e5e515b",
+                "url": "https://api.github.com/repos/moxie-lean/wp-elements/zipball/f7cf152328e25689235ee9451f14443433b26305",
+                "reference": "f7cf152328e25689235ee9451f14443433b26305",
                 "shasum": ""
             },
             "require": {
@@ -288,19 +288,19 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-04-25 19:22:28"
+            "time": "2016-05-06 15:05:43"
         },
         {
             "name": "moxie-lean/wp-endpoint",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-endpoint.git",
+                "url": "https://github.com/moxie-lean/wp-endpoint.git",
                 "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/a0d57f6cd385a720c2c0d2658d46bb199c65295e",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoint/zipball/a0d57f6cd385a720c2c0d2658d46bb199c65295e",
                 "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e",
                 "shasum": ""
             },
@@ -336,12 +336,12 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-endpoints-collection.git",
+                "url": "https://github.com/moxie-lean/wp-endpoints-collection.git",
                 "reference": "3b4298dcf9db0b06c4050e2bd802872faad6d26b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-collection/zipball/3b4298dcf9db0b06c4050e2bd802872faad6d26b",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-collection/zipball/3b4298dcf9db0b06c4050e2bd802872faad6d26b",
                 "reference": "3b4298dcf9db0b06c4050e2bd802872faad6d26b",
                 "shasum": ""
             },
@@ -383,12 +383,12 @@
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-endpoints-post.git",
+                "url": "https://github.com/moxie-lean/wp-endpoints-post.git",
                 "reference": "451a78e16e0a8287790c3e5630f83df808b4cb71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-post/zipball/451a78e16e0a8287790c3e5630f83df808b4cb71",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-post/zipball/451a78e16e0a8287790c3e5630f83df808b4cb71",
                 "reference": "451a78e16e0a8287790c3e5630f83df808b4cb71",
                 "shasum": ""
             },
@@ -428,16 +428,16 @@
         },
         {
             "name": "moxie-lean/wp-endpoints-routes",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-endpoints-routes.git",
-                "reference": "3382beba6eae8a88e420c28da95d35b75ff2a881"
+                "url": "https://github.com/moxie-lean/wp-endpoints-routes.git",
+                "reference": "d9013cf142c75206057d0e04f0b9fba3d12ad33f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-routes/zipball/3382beba6eae8a88e420c28da95d35b75ff2a881",
-                "reference": "3382beba6eae8a88e420c28da95d35b75ff2a881",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-routes/zipball/d9013cf142c75206057d0e04f0b9fba3d12ad33f",
+                "reference": "d9013cf142c75206057d0e04f0b9fba3d12ad33f",
                 "shasum": ""
             },
             "require": {
@@ -474,20 +474,20 @@
                 "api",
                 "wordpress"
             ],
-            "time": "2016-04-25 01:50:05"
+            "time": "2016-05-09 18:47:51"
         },
         {
             "name": "moxie-lean/wp-endpoints-static",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-endpoints-static.git",
-                "reference": "c6a935b6900c7b66f1bb82797106fcfd2117483c"
+                "url": "https://github.com/moxie-lean/wp-endpoints-static.git",
+                "reference": "82ff57a7622e5d9c3be07901e54d0d0dd8b2cf9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoints-static/zipball/c6a935b6900c7b66f1bb82797106fcfd2117483c",
-                "reference": "c6a935b6900c7b66f1bb82797106fcfd2117483c",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-static/zipball/82ff57a7622e5d9c3be07901e54d0d0dd8b2cf9f",
+                "reference": "82ff57a7622e5d9c3be07901e54d0d0dd8b2cf9f",
                 "shasum": ""
             },
             "require": {
@@ -526,19 +526,19 @@
                 "api",
                 "wordpress"
             ],
-            "time": "2016-04-25 01:49:06"
+            "time": "2016-05-03 17:43:39"
         },
         {
             "name": "moxie-lean/wp-page-templates",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-page-templates.git",
+                "url": "https://github.com/moxie-lean/wp-page-templates.git",
                 "reference": "a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-page-templates/zipball/a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
+                "url": "https://api.github.com/repos/moxie-lean/wp-page-templates/zipball/a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
                 "reference": "a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
                 "shasum": ""
             },
@@ -577,12 +577,12 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-utils.git",
+                "url": "https://github.com/moxie-lean/wp-utils.git",
                 "reference": "be4f0294b30054c63d02a9cae06eea5ea5a58670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-utils/zipball/be4f0294b30054c63d02a9cae06eea5ea5a58670",
+                "url": "https://api.github.com/repos/moxie-lean/wp-utils/zipball/be4f0294b30054c63d02a9cae06eea5ea5a58670",
                 "reference": "be4f0294b30054c63d02a9cae06eea5ea5a58670",
                 "shasum": ""
             },
@@ -627,12 +627,12 @@
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-widgets.git",
+                "url": "https://github.com/moxie-lean/wp-widgets.git",
                 "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
+                "url": "https://api.github.com/repos/moxie-lean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
                 "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d",
                 "shasum": ""
             },
