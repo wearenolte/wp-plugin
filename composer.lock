@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "209d3b0b546c6c9bc55cf2e0193608e0",
-    "content-hash": "955239dc295070046e1d2504ed82a73c",
+    "hash": "2c79258fc0a8326f17eb073585fa2afc",
+    "content-hash": "78d53afcdc9cf0686806ff1fc2ae4707",
     "packages": [
         {
             "name": "composer/installers",
@@ -248,16 +248,16 @@
         },
         {
             "name": "moxie-lean/wp-elements",
-            "version": "0.3.2",
+            "version": "0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-elements.git",
-                "reference": "f7cf152328e25689235ee9451f14443433b26305"
+                "reference": "27357d198faa0ebf30008a47c0d771bfa7d3a6b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-elements/zipball/f7cf152328e25689235ee9451f14443433b26305",
-                "reference": "f7cf152328e25689235ee9451f14443433b26305",
+                "url": "https://api.github.com/repos/moxie-lean/wp-elements/zipball/27357d198faa0ebf30008a47c0d771bfa7d3a6b3",
+                "reference": "27357d198faa0ebf30008a47c0d771bfa7d3a6b3",
                 "shasum": ""
             },
             "require": {
@@ -288,7 +288,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-05-06 15:05:43"
+            "time": "2016-05-10 17:02:23"
         },
         {
             "name": "moxie-lean/wp-endpoint",
@@ -330,6 +330,52 @@
             "description": "wp-endpoint",
             "homepage": "https://github.com/moxie-leean/wp-endpoints-post/",
             "time": "2016-04-24 03:37:17"
+        },
+        {
+            "name": "moxie-lean/wp-endpoints-admin-bar",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-lean/wp-endpoints-admin-bar.git",
+                "reference": "7992414317b0b0bb555f878c092817f2cf84fa28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/7992414317b0b0bb555f878c092817f2cf84fa28",
+                "reference": "7992414317b0b0bb555f878c092817f2cf84fa28",
+                "shasum": ""
+            },
+            "require": {
+                "moxie-lean/wp-endpoint": "1.*.*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\Endpoints\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moxie",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Generic endpoint to expose admin bar configuration via WP-API.",
+            "homepage": "https://github.com/moxie-leean/wp-endpoints-admin-bar",
+            "keywords": [
+                "api",
+                "wordpress"
+            ],
+            "time": "2016-05-10 18:05:28"
         },
         {
             "name": "moxie-lean/wp-endpoints-collection",

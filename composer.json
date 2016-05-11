@@ -13,7 +13,8 @@
     "moxie-lean/wp-endpoints-static": "*",
     "moxie-lean/wp-widgets": "*",
     "moxie-lean/wp-cpt": "*",
-    "moxie-lean/wp-endpoints-collection": "*"
+    "moxie-lean/wp-endpoints-collection": "*",
+    "moxie-lean/wp-endpoints-admin-bar": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",

@@ -15,6 +15,7 @@ class Api
 		Endpoints\Collection::init();
 		Endpoints\Post::init();
 		Endpoints\StaticApi::init();
+		Endpoints\AdminBarApi::init();
 
 		add_filter( 'allowed_http_origin', [ __CLASS__, 'gform_allowed_http_origin' ] );
 	}
