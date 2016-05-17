@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c79258fc0a8326f17eb073585fa2afc",
-    "content-hash": "78d53afcdc9cf0686806ff1fc2ae4707",
+    "hash": "123ba25a2c59fe0d6ed21e625a997c3d",
+    "content-hash": "cb1cb157c01512aebcae364c043fdf0c",
     "packages": [
         {
             "name": "composer/installers",
@@ -333,16 +333,16 @@
         },
         {
             "name": "moxie-lean/wp-endpoints-admin-bar",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-admin-bar.git",
-                "reference": "7992414317b0b0bb555f878c092817f2cf84fa28"
+                "reference": "2c763859cd3fe6cd1efd2e431f10aa2c2b9fd583"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/7992414317b0b0bb555f878c092817f2cf84fa28",
-                "reference": "7992414317b0b0bb555f878c092817f2cf84fa28",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/2c763859cd3fe6cd1efd2e431f10aa2c2b9fd583",
+                "reference": "2c763859cd3fe6cd1efd2e431f10aa2c2b9fd583",
                 "shasum": ""
             },
             "require": {
@@ -375,7 +375,7 @@
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-10 18:05:28"
+            "time": "2016-05-12 15:11:55"
         },
         {
             "name": "moxie-lean/wp-endpoints-collection",
