@@ -14,8 +14,8 @@ class Bootstrap {
 	public static function init() {
 		// Widgets.
 		Widgets\Register::init( [
-			'leean' => [
-				/* List all required Leean widgets here (see https://github.com/moxie-leean/wp-widgets) */
+			'lean' => [
+				/* List all required Lean widgets here (see https://github.com/moxie-lean/wp-widgets) */
 			],
 		] );
 
