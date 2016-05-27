@@ -1,5 +1,5 @@
 {
-  "name": "moxie-leean/LeeanPlugin",
+  "name": "moxie-lean/LeanPlugin",
   "description": "Barebones modular WordPress plugin",
   "type": "wordpress-plugin",
   "require": {
