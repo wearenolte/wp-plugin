@@ -19,7 +19,7 @@ class Api
 		\Lean\Metadata\RestApi::init();
 
 		add_filter( 'allowed_http_origin', [ __CLASS__, 'gform_allowed_http_origin' ] );
-
+		add_filter( 'ln_endpoints_data_routes', [ __CLASS__, 'patternlab_routes' ] );
 		add_filter( 'rest_endpoints', [ __CLASS__, 'disable_endpoints' ] );
 	}
 
@@ -38,6 +38,30 @@ class Api
 			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/?\?/', $uri ) ) ||
 			( 'POST' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/submissions\/?/', $uri ) )
 				? true : $allow_all;
+	}
+
+	/**
+	 * Add routes required for patternlab.
+	 * (temporary fix until we do https://github.com/moxie-lean/ng-patternlab/issues/54).
+	 *
+	 * @param array $routes The routes.
+	 * @return array
+	 */
+	public static function patternlab_routes( $routes ) {
+		return array_merge( $routes, [
+			[
+				'url' => '/patterns',
+				'state' => 'patterns',
+				'template' => 'patterns',
+				'request' => false,
+			],
+			[
+				'url' => '/examples/:exampleId',
+				'state' => 'patternsExamples',
+				'template' => 'examples',
+				'request' => false,
+			],
+		] );
 	}
 
 	/**
