@@ -42,7 +42,7 @@ class Admin {
 	}
 
 	/**
-	 * Funtion that uses CSS to hide the preview button on the admin page.
+	 * Function that uses CSS to hide the preview button on the admin page.
 	 */
 	public static function hide_preview_button() {
 	?>
