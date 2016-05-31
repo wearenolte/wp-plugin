@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "123ba25a2c59fe0d6ed21e625a997c3d",
-    "content-hash": "cb1cb157c01512aebcae364c043fdf0c",
+    "hash": "13046a1c8897bfa6e7b30398fd7e900e",
+    "content-hash": "140e91bff5e6520490e90b459e8e0a57",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,16 +153,16 @@
         },
         {
             "name": "moxie-lean/wp-acf",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-acf.git",
-                "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc"
+                "reference": "36e4992f724c29740e82df39adbb846917ae4e1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-acf/zipball/15232b3814aa7be8cf01b1d217f75ded1670d7bc",
-                "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc",
+                "url": "https://api.github.com/repos/moxie-lean/wp-acf/zipball/36e4992f724c29740e82df39adbb846917ae4e1f",
+                "reference": "36e4992f724c29740e82df39adbb846917ae4e1f",
                 "shasum": ""
             },
             "require": {
@@ -193,12 +193,12 @@
                 }
             ],
             "description": "Helper functions for working with Advanced Custom Fields",
-            "homepage": "https://github.com/moxie-leean/wp-acf",
+            "homepage": "https://github.com/moxie-lean/wp-acf",
             "keywords": [
                 "acf",
                 "wordpress"
             ],
-            "time": "2016-04-24 03:21:52"
+            "time": "2016-05-31 14:53:09"
         },
         {
             "name": "moxie-lean/wp-cpt",
@@ -292,16 +292,16 @@
         },
         {
             "name": "moxie-lean/wp-endpoint",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoint.git",
-                "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e"
+                "reference": "18507ef0f018676a60c874fdf22f9a4c722733ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoint/zipball/a0d57f6cd385a720c2c0d2658d46bb199c65295e",
-                "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoint/zipball/18507ef0f018676a60c874fdf22f9a4c722733ef",
+                "reference": "18507ef0f018676a60c874fdf22f9a4c722733ef",
                 "shasum": ""
             },
             "require": {
@@ -328,25 +328,25 @@
                 }
             ],
             "description": "wp-endpoint",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-post/",
-            "time": "2016-04-24 03:37:17"
+            "homepage": "https://github.com/moxie-lean/wp-endpoints-post/",
+            "time": "2016-05-31 15:03:12"
         },
         {
             "name": "moxie-lean/wp-endpoints-admin-bar",
-            "version": "0.1.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-admin-bar.git",
-                "reference": "2c763859cd3fe6cd1efd2e431f10aa2c2b9fd583"
+                "reference": "1831e00f0551abe4f4859a53c3f4768a6f0df257"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/2c763859cd3fe6cd1efd2e431f10aa2c2b9fd583",
-                "reference": "2c763859cd3fe6cd1efd2e431f10aa2c2b9fd583",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/1831e00f0551abe4f4859a53c3f4768a6f0df257",
+                "reference": "1831e00f0551abe4f4859a53c3f4768a6f0df257",
                 "shasum": ""
             },
             "require": {
-                "moxie-lean/wp-endpoint": "1.*.*",
+                "moxie-lean/wp-endpoint": "2.*.*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -370,124 +370,29 @@
                 }
             ],
             "description": "Generic endpoint to expose admin bar configuration via WP-API.",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-admin-bar",
+            "homepage": "https://github.com/moxie-lean/wp-endpoints-admin-bar",
             "keywords": [
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-12 15:11:55"
-        },
-        {
-            "name": "moxie-lean/wp-endpoints-collection",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moxie-lean/wp-endpoints-collection.git",
-                "reference": "3b4298dcf9db0b06c4050e2bd802872faad6d26b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-collection/zipball/3b4298dcf9db0b06c4050e2bd802872faad6d26b",
-                "reference": "3b4298dcf9db0b06c4050e2bd802872faad6d26b",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-lean/wp-endpoint": "1.*.*",
-                "moxie-lean/wp-utils": "1.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lean\\Endpoints\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Moxie Developers",
-                    "email": "developer@getmoxied.net"
-                }
-            ],
-            "description": "Query against a WordPress site and get a JSON response with a collection of data associated with your request.",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-collection",
-            "keywords": [
-                "wordpress",
-                "wordpress API"
-            ],
-            "time": "2016-04-27 20:28:34"
-        },
-        {
-            "name": "moxie-lean/wp-endpoints-post",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moxie-lean/wp-endpoints-post.git",
-                "reference": "451a78e16e0a8287790c3e5630f83df808b4cb71"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-post/zipball/451a78e16e0a8287790c3e5630f83df808b4cb71",
-                "reference": "451a78e16e0a8287790c3e5630f83df808b4cb71",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-lean/wp-acf": "1.*.*",
-                "moxie-lean/wp-endpoint": "1.*.*",
-                "moxie-lean/wp-utils": "1.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lean\\Endpoints\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                }
-            ],
-            "description": "Generic but customisable post endpoint to expose post content via WP-API",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-post",
-            "keywords": [
-                "api",
-                "wordpress"
-            ],
-            "time": "2016-04-26 23:27:43"
+            "time": "2016-05-31 18:31:12"
         },
         {
             "name": "moxie-lean/wp-endpoints-routes",
-            "version": "1.1.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-routes.git",
-                "reference": "d9013cf142c75206057d0e04f0b9fba3d12ad33f"
+                "reference": "fdf7128c3cb094ccd0db321e982c959c7325c1c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-routes/zipball/d9013cf142c75206057d0e04f0b9fba3d12ad33f",
-                "reference": "d9013cf142c75206057d0e04f0b9fba3d12ad33f",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-routes/zipball/fdf7128c3cb094ccd0db321e982c959c7325c1c8",
+                "reference": "fdf7128c3cb094ccd0db321e982c959c7325c1c8",
                 "shasum": ""
             },
             "require": {
-                "moxie-lean/wp-endpoint": "1.*.*",
+                "moxie-lean/wp-endpoint": "2.*.*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -515,30 +420,30 @@
                 }
             ],
             "description": "Get the set of routes.",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-routes",
+            "homepage": "https://github.com/moxie-lean/wp-endpoints-routes",
             "keywords": [
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-09 18:47:51"
+            "time": "2016-05-31 18:05:19"
         },
         {
             "name": "moxie-lean/wp-endpoints-static",
-            "version": "1.0.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-static.git",
-                "reference": "82ff57a7622e5d9c3be07901e54d0d0dd8b2cf9f"
+                "reference": "7e715a5ef7338bd60f9cc1809153bfbbb0e71636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-static/zipball/82ff57a7622e5d9c3be07901e54d0d0dd8b2cf9f",
-                "reference": "82ff57a7622e5d9c3be07901e54d0d0dd8b2cf9f",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-static/zipball/7e715a5ef7338bd60f9cc1809153bfbbb0e71636",
+                "reference": "7e715a5ef7338bd60f9cc1809153bfbbb0e71636",
                 "shasum": ""
             },
             "require": {
                 "moxie-lean/wp-acf": "1.*.*",
-                "moxie-lean/wp-endpoint": "1.*.*",
+                "moxie-lean/wp-endpoint": "2.*.*",
                 "moxie-lean/wp-widgets": "1.*.*",
                 "php": ">=5.4"
             },
@@ -567,25 +472,77 @@
                 }
             ],
             "description": "Generic but customisable endpoint to expose our static data via WP-API.",
-            "homepage": "https://github.com/moxie-leean/wp-endpoints-static",
+            "homepage": "https://github.com/moxie-lean/wp-endpoints-static",
             "keywords": [
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-03 17:43:39"
+            "time": "2016-05-31 18:08:47"
         },
         {
-            "name": "moxie-lean/wp-page-templates",
-            "version": "dev-master",
+            "name": "moxie-lean/wp-metadata",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-lean/wp-page-templates.git",
-                "reference": "a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8"
+                "url": "https://github.com/moxie-lean/wp-metadata.git",
+                "reference": "71133222a06a50c33b22307dd8caa29ea705b417"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-page-templates/zipball/a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
-                "reference": "a0b3aa6939ca57eb1fc627609d3d6f9bafc7d5b8",
+                "url": "https://api.github.com/repos/moxie-lean/wp-metadata/zipball/71133222a06a50c33b22307dd8caa29ea705b417",
+                "reference": "71133222a06a50c33b22307dd8caa29ea705b417",
+                "shasum": ""
+            },
+            "require": {
+                "moxie-lean/wp-acf": "1.*.*",
+                "moxie-lean/wp-elements": "0.*.*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "0.9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lean\\Metadata\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                },
+                {
+                    "name": "Crisoforo Gaspar",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Generate metadata for your pages.",
+            "homepage": "https://github.com/moxie-lean/wp-metadata",
+            "keywords": [
+                "seo",
+                "wordpress",
+                "yoast"
+            ],
+            "time": "2016-05-31 17:54:56"
+        },
+        {
+            "name": "moxie-lean/wp-page-templates",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-lean/wp-page-templates.git",
+                "reference": "4ffe4af4e6c1a46515280c40cb57bab183662399"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-lean/wp-page-templates/zipball/4ffe4af4e6c1a46515280c40cb57bab183662399",
+                "reference": "4ffe4af4e6c1a46515280c40cb57bab183662399",
                 "shasum": ""
             },
             "require": {
@@ -612,74 +569,24 @@
                 }
             ],
             "description": "A way of registering page templates from a plugin",
-            "homepage": "https://github.com/moxie-leean/wp-page-templates",
+            "homepage": "https://github.com/moxie-lean/wp-page-templates",
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-04-24 23:38:04"
-        },
-        {
-            "name": "moxie-lean/wp-utils",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moxie-lean/wp-utils.git",
-                "reference": "be4f0294b30054c63d02a9cae06eea5ea5a58670"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-utils/zipball/be4f0294b30054c63d02a9cae06eea5ea5a58670",
-                "reference": "be4f0294b30054c63d02a9cae06eea5ea5a58670",
-                "shasum": ""
-            },
-            "require": {
-                "moxie-lean/wp-acf": "1.*.*",
-                "moxie-lean/wp-elements": "0.*.*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "0.9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Lean\\Utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Fenton",
-                    "email": "devs@getmoxied.net"
-                },
-                {
-                    "name": "Crisoforo Gaspar",
-                    "email": "devs@getmoxied.net"
-                }
-            ],
-            "description": "A suite of useful functions for your WordPress theme",
-            "homepage": "https://github.com/moxie-leean/wp-utils",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2016-04-26 23:20:36"
+            "time": "2016-05-27 14:26:20"
         },
         {
             "name": "moxie-lean/wp-widgets",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-widgets.git",
-                "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d"
+                "reference": "701227bb750a62344ee7d503b8cdbb2f6212640a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
-                "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d",
+                "url": "https://api.github.com/repos/moxie-lean/wp-widgets/zipball/701227bb750a62344ee7d503b8cdbb2f6212640a",
+                "reference": "701227bb750a62344ee7d503b8cdbb2f6212640a",
                 "shasum": ""
             },
             "require": {
@@ -707,26 +614,26 @@
                 }
             ],
             "description": "Control the WP widgets whilst using WP in as a headless CMS.",
-            "homepage": "https://github.com/moxie-leean/wp-widgets",
+            "homepage": "https://github.com/moxie-lean/wp-widgets",
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-04-25 01:43:06"
+            "time": "2016-05-27 14:33:36"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b"
+                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1bcdf03b068a530ac1962ce671dead356eeba43b",
-                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
+                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +698,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-04-03 22:58:34"
+            "time": "2016-05-30 22:24:32"
         },
         {
             "name": "wp-coding-standards/wpcs",
@@ -833,8 +740,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mitogh/katana": 20,
-        "moxie-lean/wp-page-templates": 20
+        "mitogh/katana": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

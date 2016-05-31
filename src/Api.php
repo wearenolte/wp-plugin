@@ -12,12 +12,15 @@ class Api
 	 */
 	public static function init() {
 		Endpoints\Routes::init();
-		Endpoints\Collection::init();
-		Endpoints\Post::init();
 		Endpoints\StaticApi::init();
 		Endpoints\AdminBarApi::init();
 
+		\Lean\Acf\RestApi::init();
+		\Lean\Metadata\RestApi::init();
+
 		add_filter( 'allowed_http_origin', [ __CLASS__, 'gform_allowed_http_origin' ] );
+
+		add_filter( 'rest_endpoints', [ __CLASS__, 'disable_endpoints' ] );
 	}
 
 	/**
@@ -35,5 +38,23 @@ class Api
 			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/?\?/', $uri ) ) ||
 			( 'POST' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/submissions\/?/', $uri ) )
 				? true : $allow_all;
+	}
+
+	/**
+	 * Disable unwanted endpoints (for now just users for security).
+	 *
+	 * @param array $endpoints All the active endpoints.
+	 * @return array
+	 */
+	public static function disable_endpoints( $endpoints ) {
+		if ( isset( $endpoints['/wp/v2/users'] ) ) {
+			unset( $endpoints['/wp/v2/users'] );
+		}
+
+		if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+			unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+		}
+
+		return $endpoints;
 	}
 }
