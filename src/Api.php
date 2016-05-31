@@ -18,7 +18,7 @@ class Api
 		Endpoints\AdminBarApi::init();
 
 		add_filter( 'allowed_http_origin', [ __CLASS__, 'gform_allowed_http_origin' ] );
-		
+
 		add_filter( 'ln_endpoints_data_routes', [ __CLASS__, 'patternlab_routes' ] );
 	}
 
@@ -38,7 +38,7 @@ class Api
 			( 'POST' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/submissions\/?/', $uri ) )
 				? true : $allow_all;
 	}
-	
+
 	/**
 	 * Add routes required for patternlab.
 	 * (temporary fix until we do https://github.com/moxie-lean/ng-patternlab/issues/54).
