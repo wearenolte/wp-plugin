@@ -34,8 +34,8 @@ class Api
 		$uri = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : false;
 
 		return
-			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/?\?/', $uri ) ) ||
-			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/?\?/', $uri ) ) ||
+			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/?/', $uri ) ) ||
+			( 'GET' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/?/', $uri ) ) ||
 			( 'POST' === $method && 1 === preg_match( '/gravityformsapi\/forms\/\d*\/submissions\/?/', $uri ) )
 				? true : $allow_all;
 	}
