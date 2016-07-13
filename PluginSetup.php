@@ -54,8 +54,21 @@ class PluginSetup {
 				'Plugin %s requires WordPress %s or higher.',
 				LEANP_TEXT_DOMAIN
 			), LEANP_PLUGIN_VERSION, LEANP_MINIMUM_WP_VERSION );
+
 			trigger_error( esc_html( $msg ), E_USER_ERROR );
 
+		}
+	}
+
+	/**
+	 * Dependency checks
+	 */
+	public static function check_dependencies() {
+		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+		if ( ! is_plugin_active( 'advanced-custom-fields-pro/acf.php' )
+			|| ! is_plugin_active( 'rest-api/plugin.php' ) ) {
+			wp_die( 'Service temporarily unavailable', 503 );
 		}
 	}
 
