@@ -50,19 +50,25 @@ class PluginSetup {
 
 		if ( version_compare( $wp_version, LEANP_MINIMUM_WP_VERSION, '<' ) ) {
 
-			deactivate_plugins( LEANP_PLUGIN_NAME );
+			$msg = sprintf( __(
+				'Plugin %s requires WordPress %s or higher.',
+				LEANP_TEXT_DOMAIN
+			), LEANP_PLUGIN_VERSION, LEANP_MINIMUM_WP_VERSION );
 
-			echo wp_kses(
-				sprintf(
-					esc_html__(
-						'Plugin %s requires WordPress %s or higher.',
-						LEANP_TEXT_DOMAIN
-					), LEANP_API_VERSION, LEANP_MINIMUM_WP_VERSION
-				),
-				array()
-			);
-			wp_die();
-			exit;
+			trigger_error( esc_html( $msg ), E_USER_ERROR );
+
+		}
+	}
+
+	/**
+	 * Dependency checks
+	 */
+	public static function check_dependencies() {
+		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+		if ( ! is_plugin_active( 'advanced-custom-fields-pro/acf.php' )
+			|| ! is_plugin_active( 'rest-api/plugin.php' ) ) {
+			wp_die( 'Service temporarily unavailable', 503 );
 		}
 	}
 
