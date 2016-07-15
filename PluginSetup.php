@@ -73,7 +73,7 @@ class PluginSetup {
 
 			if ( is_admin() ) {
 				add_action( 'admin_notices', [ __CLASS__, 'missing_plugins_notice' ] );
-			} else {
+			} elseif ( defined( 'REST_API_VERSION' ) ) {
 				wp_die( 'Service temporarily unavailable', 503 );
 			}
 		}
