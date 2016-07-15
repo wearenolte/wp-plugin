@@ -68,8 +68,26 @@ class PluginSetup {
 
 		if ( ! is_plugin_active( 'advanced-custom-fields-pro/acf.php' )
 			|| ! is_plugin_active( 'rest-api/plugin.php' ) ) {
-			wp_die( 'Service temporarily unavailable', 503 );
+
+			error_log( 'There are missing required plugins, please review.' );
+
+			if ( is_admin() ) {
+				add_action( 'admin_notices', [ __CLASS__, 'missing_plugins_notice' ] );
+			} else {
+				wp_die( 'Service temporarily unavailable', 503 );
+			}
 		}
+	}
+
+	/**
+	 * Admin message for missing dependencies.
+	 */
+	public static function missing_plugins_notice() {
+		?>
+		<div class="notice notice-error">
+			<p><?php esc_html_e( 'There are missing required plugins, please review.', MOXIE_TEXT_DOMAIN ); ?></p>
+		</div>
+		<?php
 	}
 
 	/**
