@@ -24,5 +24,5 @@ require_once LEANP_PLUGIN_DIR . 'PluginSetup.php';
 $class_name = __NAMESPACE__ . '\\PluginSetup';
 register_activation_hook( __FILE__, array( $class_name, 'maybe_deactivate' ) );
 register_deactivation_hook( __FILE__, array( $class_name, 'flush_rewrite_rules' ) );
-add_action( 'rest_api_init', array( $class_name, 'check_dependencies' ) );
+add_action( 'init', array( $class_name, 'check_dependencies' ) );
 $class_name::init();
