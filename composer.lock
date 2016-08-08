@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "13046a1c8897bfa6e7b30398fd7e900e",
-    "content-hash": "140e91bff5e6520490e90b459e8e0a57",
+    "hash": "e214f53e745c3e2cdcda3d3f01a6799f",
+    "content-hash": "799f0a662ffb74e4cfde43462a1e1916",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.25",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
-                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
+                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
                 "shasum": ""
             },
             "require": {
@@ -65,6 +65,7 @@
                 "MODX Evo",
                 "Mautic",
                 "OXID",
+                "RadPHP",
                 "SMF",
                 "Thelia",
                 "WolfCMS",
@@ -80,6 +81,7 @@
                 "dokuwiki",
                 "drupal",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
@@ -105,7 +107,129 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-13 19:46:30"
+            "time": "2016-07-05 06:18:20"
+        },
+        {
+            "name": "doctrine/annotations",
+            "version": "v1.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
+                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Annotations\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2015-08-31 12:32:49"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "mitogh/katana",
@@ -153,16 +277,16 @@
         },
         {
             "name": "moxie-lean/wp-acf",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-acf.git",
-                "reference": "36e4992f724c29740e82df39adbb846917ae4e1f"
+                "reference": "bd39b1cf0f4e87cd6355a37eb0fa090fa76aa0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-acf/zipball/36e4992f724c29740e82df39adbb846917ae4e1f",
-                "reference": "36e4992f724c29740e82df39adbb846917ae4e1f",
+                "url": "https://api.github.com/repos/moxie-lean/wp-acf/zipball/bd39b1cf0f4e87cd6355a37eb0fa090fa76aa0f9",
+                "reference": "bd39b1cf0f4e87cd6355a37eb0fa090fa76aa0f9",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +322,7 @@
                 "acf",
                 "wordpress"
             ],
-            "time": "2016-05-31 14:53:09"
+            "time": "2016-06-23 19:05:44"
         },
         {
             "name": "moxie-lean/wp-cpt",
@@ -248,16 +372,16 @@
         },
         {
             "name": "moxie-lean/wp-elements",
-            "version": "0.3.3",
+            "version": "0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-elements.git",
-                "reference": "27357d198faa0ebf30008a47c0d771bfa7d3a6b3"
+                "reference": "e5e578842a6e031472263c745e5202f3901e084d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-elements/zipball/27357d198faa0ebf30008a47c0d771bfa7d3a6b3",
-                "reference": "27357d198faa0ebf30008a47c0d771bfa7d3a6b3",
+                "url": "https://api.github.com/repos/moxie-lean/wp-elements/zipball/e5e578842a6e031472263c745e5202f3901e084d",
+                "reference": "e5e578842a6e031472263c745e5202f3901e084d",
                 "shasum": ""
             },
             "require": {
@@ -288,7 +412,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-05-10 17:02:23"
+            "time": "2016-06-09 19:14:42"
         },
         {
             "name": "moxie-lean/wp-endpoint",
@@ -333,16 +457,16 @@
         },
         {
             "name": "moxie-lean/wp-endpoints-admin-bar",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-admin-bar.git",
-                "reference": "1831e00f0551abe4f4859a53c3f4768a6f0df257"
+                "reference": "48a22e94f6e0e326b35264058364a050eca6a041"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/1831e00f0551abe4f4859a53c3f4768a6f0df257",
-                "reference": "1831e00f0551abe4f4859a53c3f4768a6f0df257",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-admin-bar/zipball/48a22e94f6e0e326b35264058364a050eca6a041",
+                "reference": "48a22e94f6e0e326b35264058364a050eca6a041",
                 "shasum": ""
             },
             "require": {
@@ -375,20 +499,20 @@
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-31 18:31:12"
+            "time": "2016-07-18 21:39:19"
         },
         {
             "name": "moxie-lean/wp-endpoints-routes",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-routes.git",
-                "reference": "fdf7128c3cb094ccd0db321e982c959c7325c1c8"
+                "reference": "d86e77908f9d7ddc862d1a902cd8d2d7c0449473"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-routes/zipball/fdf7128c3cb094ccd0db321e982c959c7325c1c8",
-                "reference": "fdf7128c3cb094ccd0db321e982c959c7325c1c8",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-routes/zipball/d86e77908f9d7ddc862d1a902cd8d2d7c0449473",
+                "reference": "d86e77908f9d7ddc862d1a902cd8d2d7c0449473",
                 "shasum": ""
             },
             "require": {
@@ -425,20 +549,20 @@
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-31 18:05:19"
+            "time": "2016-06-03 16:28:18"
         },
         {
             "name": "moxie-lean/wp-endpoints-static",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-endpoints-static.git",
-                "reference": "7e715a5ef7338bd60f9cc1809153bfbbb0e71636"
+                "reference": "23258bba9b65d55b78b3dc3edc123d75009b0825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-static/zipball/7e715a5ef7338bd60f9cc1809153bfbbb0e71636",
-                "reference": "7e715a5ef7338bd60f9cc1809153bfbbb0e71636",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoints-static/zipball/23258bba9b65d55b78b3dc3edc123d75009b0825",
+                "reference": "23258bba9b65d55b78b3dc3edc123d75009b0825",
                 "shasum": ""
             },
             "require": {
@@ -477,20 +601,20 @@
                 "api",
                 "wordpress"
             ],
-            "time": "2016-05-31 18:08:47"
+            "time": "2016-07-14 15:32:39"
         },
         {
             "name": "moxie-lean/wp-metadata",
-            "version": "0.1.0",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-lean/wp-metadata.git",
-                "reference": "71133222a06a50c33b22307dd8caa29ea705b417"
+                "reference": "9f7ab272f21f2607207226d7d6fc543e3dcfe32b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-lean/wp-metadata/zipball/71133222a06a50c33b22307dd8caa29ea705b417",
-                "reference": "71133222a06a50c33b22307dd8caa29ea705b417",
+                "url": "https://api.github.com/repos/moxie-lean/wp-metadata/zipball/9f7ab272f21f2607207226d7d6fc543e3dcfe32b",
+                "reference": "9f7ab272f21f2607207226d7d6fc543e3dcfe32b",
                 "shasum": ""
             },
             "require": {
@@ -529,7 +653,7 @@
                 "wordpress",
                 "yoast"
             ],
-            "time": "2016-05-31 17:54:56"
+            "time": "2016-08-03 14:40:23"
         },
         {
             "name": "moxie-lean/wp-page-templates",
@@ -619,21 +743,131 @@
                 "wordpress"
             ],
             "time": "2016-05-27 14:33:36"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v3.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "8201978de88a9fa0923e18601bb17f1df9c721e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/8201978de88a9fa0923e18601bb17f1df9c721e7",
+                "reference": "8201978de88a9fa0923e18601bb17f1df9c721e7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-06-29 05:41:56"
+        },
+        {
+            "name": "zircote/swagger-php",
+            "version": "2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zircote/swagger-php.git",
+                "reference": "299df0b51f641225ed50ba5199b21e8cfc34e4f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/299df0b51f641225ed50ba5199b21e8cfc34e4f4",
+                "reference": "299df0b51f641225ed50ba5199b21e8cfc34e4f4",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=5.4.0",
+                "symfony/finder": "*"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "zendframework/zend-form": "<2.8"
+            },
+            "bin": [
+                "bin/swagger"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Swagger\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Allen",
+                    "email": "zircote@gmail.com",
+                    "homepage": "http://www.zircote.com"
+                },
+                {
+                    "name": "Bob Fanger",
+                    "email": "bfanger@gmail.com",
+                    "homepage": "http://bfanger.nl"
+                }
+            ],
+            "description": "Swagger-PHP - Generate interactive documentation for your RESTful API using phpdoc annotations",
+            "homepage": "https://github.com/zircote/swagger-php/",
+            "keywords": [
+                "api",
+                "json",
+                "rest",
+                "service discovery"
+            ],
+            "time": "2016-05-27 09:35:51"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d"
+                "reference": "4edb770cb853def6e60c93abb088ad5ac2010c83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
-                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4edb770cb853def6e60c93abb088ad5ac2010c83",
+                "reference": "4edb770cb853def6e60c93abb088ad5ac2010c83",
                 "shasum": ""
             },
             "require": {
@@ -698,7 +932,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-05-30 22:24:32"
+            "time": "2016-07-13 23:29:13"
         },
         {
             "name": "wp-coding-standards/wpcs",

@@ -18,6 +18,8 @@ class Api
 		\Lean\Acf\RestApi::init();
 		\Lean\Metadata\RestApi::init();
 
+		Swagger::init();
+
 		add_filter( 'allowed_http_origin', [ __CLASS__, 'gform_allowed_http_origin' ] );
 		add_filter( 'ln_endpoints_data_routes', [ __CLASS__, 'patternlab_routes' ] );
 		add_filter( 'rest_endpoints', [ __CLASS__, 'disable_endpoints' ] );

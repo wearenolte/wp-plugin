@@ -13,7 +13,8 @@
     "moxie-lean/wp-widgets": "1.*",
     "moxie-lean/wp-cpt": "1.*",
     "moxie-lean/wp-metadata": "0.*",
-    "moxie-lean/wp-endpoints-admin-bar": "1.*"
+    "moxie-lean/wp-endpoints-admin-bar": "1.*",
+    "zircote/swagger-php": "2.0.7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",
