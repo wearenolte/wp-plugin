@@ -1,9 +1,9 @@
 <?php namespace Leanp;
 /**
- * Plugin Name: Moxie Leanp
+ * Plugin Name: Nolte Leanp
  * Description: Barebones modular WordPress plugin.
  * Version: 0.1.0
- * Author: Moxie
+ * Author: Nolte
  * Author URI: http://getmoxied.net
  * Text Domain: leanp
  */

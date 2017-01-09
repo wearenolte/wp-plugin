@@ -85,7 +85,7 @@ class PluginSetup {
 	public static function missing_plugins_notice() {
 		?>
 		<div class="notice notice-error">
-			<p><?php esc_html_e( 'There are missing required plugins, please review.', MOXIE_TEXT_DOMAIN ); ?></p>
+			<p><?php esc_html_e( 'There are missing required plugins, please review.', NOLTE_TEXT_DOMAIN ); ?></p>
 		</div>
 		<?php
 	}
